@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DailyVerseComponent } from './daily-verse.component';
+import { VersesModule } from 'app/verses/verses.module';
 
 describe('DailyVerseComponent', () => {
   let component: DailyVerseComponent;
@@ -8,6 +9,7 @@ describe('DailyVerseComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [VersesModule],
       declarations: [ DailyVerseComponent ]
     })
     .compileComponents();

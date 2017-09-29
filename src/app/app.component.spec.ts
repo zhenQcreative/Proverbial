@@ -1,10 +1,18 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import { VersesModule } from 'app/verses/verses.module';
+import { DailyVerseModule } from 'app/daily-verse/daily-verse.module';
+import { FavoriteVersesModule } from 'app/favorite-verses/favorite-verses.module';
+import { AppRoutingModule } from 'app/app-routing.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [VersesModule,
+        DailyVerseModule,
+        FavoriteVersesModule,
+        AppRoutingModule],
       declarations: [
         AppComponent
       ],
