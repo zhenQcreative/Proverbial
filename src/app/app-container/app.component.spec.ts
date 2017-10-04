@@ -5,6 +5,8 @@ import { VersesModule } from 'app/verses/verses.module';
 import { DailyVerseModule } from 'app/daily-verse/daily-verse.module';
 import { FavoriteVersesModule } from 'app/favorite-verses/favorite-verses.module';
 import { AppRoutingModule } from 'app/app-routing.module';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { APP_BASE_HREF } from '@angular/common';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -16,6 +18,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      providers: [{provide: APP_BASE_HREF, useValue : '/' }]
     }).compileComponents();
   }));
 
