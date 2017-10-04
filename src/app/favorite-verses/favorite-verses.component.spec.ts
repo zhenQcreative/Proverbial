@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FavoriteVersesComponent } from './favorite-verses.component';
+import { VersesModule } from 'app/verses/verses.module';
+import { Verse } from 'app/verses/verses';
 
 describe('FavoriteVersesComponent', () => {
   let component: FavoriteVersesComponent;
@@ -8,6 +10,7 @@ describe('FavoriteVersesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [VersesModule],
       declarations: [ FavoriteVersesComponent ]
     })
     .compileComponents();
@@ -19,7 +22,7 @@ describe('FavoriteVersesComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create Favorite Verses Component', () => {
     expect(component).toBeTruthy();
   });
 });
