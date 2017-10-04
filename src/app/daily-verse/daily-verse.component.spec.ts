@@ -21,7 +21,7 @@ describe('DailyVerseComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create Daily Verse Component', () => {
     expect(component).toBeTruthy();
   });
 });

@@ -22,7 +22,7 @@ describe('FavoriteVersesComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create FavoriteVersesComponent', () => {
+  it('should create Favorite Verses Component', () => {
     expect(component).toBeTruthy();
   });
 });
