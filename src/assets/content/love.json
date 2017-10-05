@@ -1,0 +1,23 @@
+[
+    {
+        "book": "Proverbs",
+        "chapter": "10",
+        "verseStart": "12",
+        "verseEnd": "12",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "15",
+        "verseStart": "17",
+        "verseEnd": "17",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "25",
+        "verseStart": "21",
+        "verseEnd": "21",
+        "fav": false
+    }
+]
