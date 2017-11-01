@@ -16,25 +16,9 @@ export class FavoriteVersesComponent implements OnInit {
 
   ngOnInit() {
     this.myVerses = this.bibleService.data;
-   /*  this.bibleService.getVerses().then(result => {
-      console.log('onInit: ', result);
-      console.log('onInit data: ', this.bibleService.getData());
-    }); */
   }
-
-  /* getVerses(): void {
-    this.bibleService.getVerses().subscribe(result => {
-      console.log('favorite data: ', result);
-      this.myVerses = result;
-    });
-  } */
-
   getVerses(): void {
     this.myVerses = this.bibleService.getData();
-    // this.bibleService.getVerses().then(result => {
-    //   console.log('favorite data: ', result);
-    //   this.myVerses = result;
-    // });
   }
 
 }

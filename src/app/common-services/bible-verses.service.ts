@@ -17,25 +17,8 @@ export class BibleVersesService {
              .subscribe(res => this.data = res.json());
   }
 
-  /* getVerses(): Observable<Verse[]> {
-    return this.http.get(this.PROVERBS_URL, {headers: this.headers})
-                    .map(response => this.data);
-  } */
- /*  getVerses(): Promise<Verse[]> {
-    return this.http.get(this.PROVERBS_URL)
-                    .toPromise()
-                    .then(response => response.json().data as Verse[])
-                    .catch(this.handleError);
-  } */
-
   getData(): Verse[] {
-    console.log('service data: ', this.data);
     return this.data;
   }
-
-  /* private handleError(error: any): Promise<any> {
-    console.error('An error occurred', error); // for demo purposes only
-    return Promise.reject(error.message || error);
-  } */
 
 }
