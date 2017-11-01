@@ -1,0 +1,44 @@
+[
+    {
+        "book": "Proverbs",
+        "chapter": "3",
+        "verseStart": "3",
+        "verseEnd": "3",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "14",
+        "verseStart": "22",
+        "verseEnd": "22",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "16",
+        "verseStart": "6",
+        "verseEnd": "6",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "19",
+        "verseStart": "11",
+        "verseEnd": "11",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "21",
+        "verseStart": "3",
+        "verseEnd": "3",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "21",
+        "verseStart": "3",
+        "verseEnd": "3",
+        "fav": false
+    }
+]

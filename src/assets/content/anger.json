@@ -265,4 +265,137 @@
         "verseEnd": "8",
         "fav": false
     },
+    {
+        "book": "Proverbs",
+        "chapter": "3",
+        "verseStart": "30",
+        "verseEnd": "30",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "4",
+        "verseStart": "17",
+        "verseEnd": "17",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "10",
+        "verseStart": "12",
+        "verseEnd": "12",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "13",
+        "verseStart": "10",
+        "verseEnd": "10",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "15",
+        "verseStart": "1",
+        "verseEnd": "1",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "15",
+        "verseStart": "17",
+        "verseEnd": "18",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "16",
+        "verseStart": "29",
+        "verseEnd": "29",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "17",
+        "verseStart": "1",
+        "verseEnd": "1",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "17",
+        "verseStart": "14",
+        "verseEnd": "14",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "19",
+        "verseStart": "19",
+        "verseEnd": "19",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "20",
+        "verseStart": "3",
+        "verseEnd": "3",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "20",
+        "verseStart": "18",
+        "verseEnd": "18",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "25",
+        "verseStart": "8",
+        "verseEnd": "8",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "26",
+        "verseStart": "20",
+        "verseEnd": "25",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "27",
+        "verseStart": "3",
+        "verseEnd": "4",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "28",
+        "verseStart": "25",
+        "verseEnd": "25",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "29",
+        "verseStart": "10",
+        "verseEnd": "10",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "29",
+        "verseStart": "22",
+        "verseEnd": "22",
+        "fav": false
+    },
+    {
+        "book": "Proverbs",
+        "chapter": "30",
+        "verseStart": "33",
+        "verseEnd": "33",
+        "fav": false
+    }
 ]
