@@ -11,22 +11,22 @@ export class DailyVerseComponent implements OnInit {
     {
       book: 'Proverbs',
       chapter: 1,
-      verseNumber: 1,
-      verse: 'The proverbs of Solomon the son of David, king of Israel:',
+      verse: 1,
+      text: 'The proverbs of Solomon the son of David, king of Israel:',
       favorite: false
     },
     {
       book: 'Proverbs',
       chapter: 1,
-      verseNumber: 2,
-      verse: 'To know wisdom and instruction, To perceive the words of understanding,',
+      verse: 2,
+      text: 'To know wisdom and instruction, To perceive the words of understanding,',
       favorite: true
     },
     {
       book: 'Proverbs',
       chapter: 1,
-      verseNumber: 3,
-      verse: 'To receive the instruction of wisdom, Justice, judgment, and equity;',
+      verse: 3,
+      text: 'To receive the instruction of wisdom, Justice, judgment, and equity;',
       favorite: true
     }
   ];
