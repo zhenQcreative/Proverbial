@@ -7,29 +7,7 @@ import { Verse } from '../verses/verses';
   styleUrls: ['./daily-verse.component.scss']
 })
 export class DailyVerseComponent implements OnInit {
-  myVerses: Verse[] = [
-    {
-      book: 'Proverbs',
-      chapter: 1,
-      verse: 1,
-      text: 'The proverbs of Solomon the son of David, king of Israel:',
-      favorite: false
-    },
-    {
-      book: 'Proverbs',
-      chapter: 1,
-      verse: 2,
-      text: 'To know wisdom and instruction, To perceive the words of understanding,',
-      favorite: true
-    },
-    {
-      book: 'Proverbs',
-      chapter: 1,
-      verse: 3,
-      text: 'To receive the instruction of wisdom, Justice, judgment, and equity;',
-      favorite: true
-    }
-  ];
+  myVerses: Verse[];
   constructor() { }
 
   ngOnInit() {

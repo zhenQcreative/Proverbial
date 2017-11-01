@@ -6,8 +6,7 @@ import { BibleVersesService } from 'app/common-services/bible-verses.service';
 @Component({
   selector: 'app-favorite-verses',
   templateUrl: './favorite-verses.component.html',
-  styleUrls: ['./favorite-verses.component.scss'],
-  providers: [BibleVersesService]
+  styleUrls: ['./favorite-verses.component.scss']
 })
 export class FavoriteVersesComponent implements OnInit {
   myVerses: Verse[];
