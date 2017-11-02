@@ -13,12 +13,15 @@ export class BibleVersesService {
   private headers = new Headers({'Content-Type': 'application/json'});
 
   constructor(private http: Http) {
-    this.http.get(this.PROVERBS_URL)
-             .subscribe(res => this.data = res.json());
+    this.getUpdate().subscribe(res => this.data = res.json());
   }
 
   getData(): Verse[] {
     return this.data;
+  }
+
+  getUpdate() {
+   return this.http.get(this.PROVERBS_URL);
   }
 
 }

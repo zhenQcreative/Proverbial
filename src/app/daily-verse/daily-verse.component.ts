@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Verse } from '../verses/verses';
+import { BibleVersesService } from 'app/common-services/bible-verses.service';
 
 @Component({
   selector: 'app-daily-verse',
@@ -8,14 +9,29 @@ import { Verse } from '../verses/verses';
 })
 export class DailyVerseComponent implements OnInit {
   myVerses: Verse[];
-  constructor() { }
+  dailyVerse: Verse;
+
+  private intervalTime = 10000;
+
+  constructor(public bibleService: BibleVersesService) { }
 
   ngOnInit() {
+    this.bibleService.getUpdate().subscribe(res => this.myVerses = res.json());
+    this.displayVerse();
   }
 
-  randomDailyVerse(): Verse {
-    const randomVerseNumber = this.getRandomInt(0, 3);
-    return this.myVerses[randomVerseNumber];
+  displayVerse() {
+    setInterval(() => {
+      this.randomDailyVerse();
+    }, this.intervalTime);
+  }
+
+  randomDailyVerse() {
+    let randomVerseNumber = 0;
+    if (this.myVerses !== undefined && this.myVerses !== null) {
+        randomVerseNumber = this.getRandomInt(0, this.myVerses.length);
+        this.dailyVerse = this.myVerses[randomVerseNumber];
+    }
   }
 
   // The maximum is exclusive and the minimum is inclusive

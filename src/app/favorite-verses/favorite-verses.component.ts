@@ -14,8 +14,9 @@ export class FavoriteVersesComponent implements OnInit {
   constructor(public bibleService: BibleVersesService) { }
 
   ngOnInit() {
-    this.myVerses = this.bibleService.data;
+    this.bibleService.getUpdate().subscribe(res => this.myVerses = res.json());
   }
+
   getVerses(): void {
     this.myVerses = this.bibleService.getData();
   }
