@@ -9,6 +9,7 @@ import { DailyVerseModule } from './daily-verse/daily-verse.module';
 import { FavoriteVersesModule } from './favorite-verses/favorite-verses.module';
 import { APP_BASE_HREF } from '@angular/common';
 import { AppComponent } from './app-container/app.component';
+import { BibleVersesService } from 'app/common-services/bible-verses.service';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AppComponent } from './app-container/app.component';
     FavoriteVersesModule,
     AppRoutingModule
   ],
+  providers: [ BibleVersesService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

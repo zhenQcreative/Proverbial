@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { FavoriteVersesComponent } from './favorite-verses.component';
 import { VersesModule } from '../verses/verses.module';
+import { BibleVersesService } from 'app/common-services/bible-verses.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { VersesModule } from '../verses/verses.module';
     CommonModule,
     VersesModule
   ],
-  providers: [],
+  providers: [BibleVersesService],
   exports: [FavoriteVersesComponent]
 })
 export class FavoriteVersesModule { }
