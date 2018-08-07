@@ -8,18 +8,18 @@ import { BibleVersesService } from 'app/common-services/bible-verses.service';
   styleUrls: ['./daily-verse.component.scss']
 })
 export class DailyVerseComponent implements OnInit {
-  myVerses: Verse[];
+  bibleVerses: Verse[];
   displayVerses: Verse[];
   dailyVerse: Verse;
   myFavorites: boolean;
 
-  private intervalTime = 10000;
+  private intervalTime = 20000;
 
   constructor(public bibleService: BibleVersesService) { }
 
   ngOnInit() {
     this.bibleService.getUpdate().subscribe((res) => {
-      this.myVerses = res.json();
+      this.bibleVerses = res.json();
       this.displayVerses = res.json();
       this.randomDailyVerse();
     });
@@ -28,15 +28,13 @@ export class DailyVerseComponent implements OnInit {
   }
 
   showFavoritesOnly() {
-    this.displayVerses = new Array<Verse>();
     this.myFavorites = !this.myFavorites;
-    console.log('fave: ', this.myFavorites);
-    this.myVerses.filter((verse) => {
-      if (verse.favorite === this.myFavorites) {
-        this.displayVerses.push(verse);
-      }
-      this.randomDailyVerse();
-    });
+    if (this.myFavorites) {
+      this.displayVerses = this.bibleVerses.filter((verse) => verse.favorite === true);
+    } else {
+      this.displayVerses = this.bibleVerses;
+    }
+    this.randomDailyVerse();
     this.displayVerse();
   }
 
