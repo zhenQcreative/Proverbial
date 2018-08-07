@@ -4,7 +4,7 @@
 		"chapter": "1",
 		"verse": "1",
 		"text": "The proverbs of Solomon the son of David, king of Israel:",
-		"favorite": true
+		"favorite": false
 	},
 	{
 		"book": "Proverbs",
@@ -95,7 +95,7 @@
 		"chapter": "1",
 		"verse": "14",
 		"text": "Cast in your lot among us, Let us all have one purse&quot;—",
-		"favorite": false
+		"favorite": true
 	},
 	{
 		"book": "Proverbs",
@@ -228,7 +228,7 @@
 		"chapter": "1",
 		"verse": "33",
 		"text": "But whoever listens to me will dwell safely, And will be secure, without fear of evil.&quot;",
-		"favorite": false
+		"favorite": true
 	},
 	{
 		"book": "Proverbs",

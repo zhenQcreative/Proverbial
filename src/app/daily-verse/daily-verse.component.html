@@ -1,3 +1,4 @@
-<p *ngIf="this.dailyVerse">
-  <app-verses [displayVerse]="this.dailyVerse"></app-verses>
+<button (click)="showFavoritesOnly()">Show Only Favorites</button>
+<p *ngIf="dailyVerse">
+  <app-verses [displayVerse]="dailyVerse"></app-verses>
 </p>

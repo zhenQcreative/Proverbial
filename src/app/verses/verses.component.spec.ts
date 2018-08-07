@@ -10,8 +10,8 @@ describe('VersesComponent', () => {
   const mockVerses = {
       book: 'Proverbs',
       chapter: 1,
-      verseNumber: 1,
-      verse: 'The proverbs of Solomon the son of David, king of Israel:',
+      verse: 1,
+      text: 'The proverbs of Solomon the son of David, king of Israel:',
       favorite: false
   };
 
@@ -42,7 +42,7 @@ describe('VersesComponent', () => {
   it('should display verse references as "book chapter : verseNumber"', () => {
     const debugElement = fixture.debugElement.query(By.css('.verseReferences'));
     const verseReferences = debugElement.nativeElement;
-    expect(verseReferences.textContent).toContain(mockVerses.book + ' ' + mockVerses.chapter + ' : ' + mockVerses.verseNumber);
+    expect(verseReferences.textContent).toContain(mockVerses.book + ' ' + mockVerses.chapter + ' : ' + mockVerses.verse);
   });
 
   it('should not display image if verse is not favorited', () => {
