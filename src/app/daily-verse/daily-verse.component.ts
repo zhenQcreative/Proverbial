@@ -9,14 +9,34 @@ import { BibleVersesService } from 'app/common-services/bible-verses.service';
 })
 export class DailyVerseComponent implements OnInit {
   myVerses: Verse[];
+  displayVerses: Verse[];
   dailyVerse: Verse;
+  myFavorites: boolean;
 
   private intervalTime = 10000;
 
   constructor(public bibleService: BibleVersesService) { }
 
   ngOnInit() {
-    this.bibleService.getUpdate().subscribe(res => this.myVerses = res.json());
+    this.bibleService.getUpdate().subscribe((res) => {
+      this.myVerses = res.json();
+      this.displayVerses = res.json();
+      this.randomDailyVerse();
+    });
+    this.displayVerse();
+    this.myFavorites = false;
+  }
+
+  showFavoritesOnly() {
+    this.displayVerses = new Array<Verse>();
+    this.myFavorites = !this.myFavorites;
+    console.log('fave: ', this.myFavorites);
+    this.myVerses.filter((verse) => {
+      if (verse.favorite === this.myFavorites) {
+        this.displayVerses.push(verse);
+      }
+      this.randomDailyVerse();
+    });
     this.displayVerse();
   }
 
@@ -28,9 +48,9 @@ export class DailyVerseComponent implements OnInit {
 
   randomDailyVerse() {
     let randomVerseNumber = 0;
-    if (this.myVerses !== undefined && this.myVerses !== null) {
-        randomVerseNumber = this.getRandomInt(0, this.myVerses.length);
-        this.dailyVerse = this.myVerses[randomVerseNumber];
+    if (this.displayVerses !== undefined && this.displayVerses !== null) {
+      randomVerseNumber = this.getRandomInt(0, this.displayVerses.length);
+      this.dailyVerse = this.displayVerses[randomVerseNumber];
     }
   }
 
